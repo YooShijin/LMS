@@ -12,6 +12,7 @@ import {
 
 import { cn } from "@/lib/utils";
 import { Badge, Grip, Pencil } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface ChaptersListProps {
   items: Chapter[];
@@ -90,16 +91,16 @@ export const ChaptersList = ({
                     </div>
                     {chapter.title}
                     <div className="ml-auto pr-2 flex items-center gap-x-2">
-                      {chapter.isFree && <Badge>Free</Badge>}
+                      {chapter.isFree && <Button>Free</Button>}
 
-                      <Badge
+                      <Button
                         className={cn(
                           "bg-slate-500",
                           chapter.isPublished && "bg-sky-700"
                         )}
                       >
                         {chapter.isPublished ? "Published" : "Draft"}
-                      </Badge>
+                      </Button>
                       <Pencil
                         onClick={() => {
                           onEdit(chapter.id);
