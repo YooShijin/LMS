@@ -5,7 +5,7 @@ import { Menu } from "lucide-react";
 
 interface CourseMobileSideBarProps {
   course: Course & {
-    chpaters: (Chapter & { userProgress: UserProgress[] | null })[];
+    chapters: (Chapter & { userProgress: UserProgress[] | null })[];
   };
   progressCount: number;
 }
