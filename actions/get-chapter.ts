@@ -36,7 +36,7 @@ export const getChpater = async ({
       throw new Error("Chapter or course not found");
     }
 
-    let muxData = null;
+    let muxData: any;
     let attachments: Attachment[] = [];
     let nextChapter: Chapter | null = null;
 

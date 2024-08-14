@@ -11,21 +11,21 @@ import { cn } from "@/lib/utils";
 import { set } from "zod";
 
 interface VideoPlayerProps {
-  playbackId: string;
+  playbackId: string | undefined;
   courseId: string;
   chapterId: string;
-  nextChpaterId?: string;
+  nextChapterId?: string;
   isLocked: boolean;
-  completeonEnd: boolean;
+  completeOnEnd: boolean;
   title: string;
 }
 export const VideoPlayer = ({
   playbackId,
   courseId,
   chapterId,
-  nextChpaterId,
+  nextChapterId,
   isLocked,
-  completeonEnd,
+  completeOnEnd,
   title,
 }: VideoPlayerProps) => {
   const [isReady, setIsReady] = useState(false);

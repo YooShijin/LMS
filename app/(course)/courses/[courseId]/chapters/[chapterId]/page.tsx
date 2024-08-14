@@ -3,7 +3,6 @@ import { Banner } from "@/components/banner";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 import { VideoPlayer } from "./_components/video-player";
-import { todo } from "node:test";
 import { CourseEnrollButton } from "./_components/course-enroll-button";
 
 const ChapterIdPage = async ({
