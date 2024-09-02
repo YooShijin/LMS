@@ -12,5 +12,9 @@ export const CourseEnrollButton = ({
   price,
   courseId,
 }: CourseEnrollButtonProps) => {
-  return <Button>Enroll for {formatPrice(price)}</Button>;
+  return (
+    <Button size="sm" className="w-full md:w-auto ">
+      Enroll for {formatPrice(price)}
+    </Button>
+  );
 };
